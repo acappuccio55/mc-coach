@@ -2,9 +2,10 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import Link from "next/link"
+import { ReactNode } from "react"
 
 interface HeroSectionProps {
-  title: string
+  title: ReactNode
   subtitle: string
   buttonText: string
   badgeText?: string

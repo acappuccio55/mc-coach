@@ -1,5 +1,5 @@
 export interface Service {
-  icon: any
+  icon: unknown
   title: string
   description: string
   features: string[]

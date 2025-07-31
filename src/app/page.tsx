@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Dumbbell, Apple, Smartphone, Star, Phone, Mail, Instagram } from "lucide-react"
@@ -107,7 +106,7 @@ export default function PersonalTrainerPage() {
         </div>
       </section>
 
-      {/* Testimonials Section*/}
+      {/* Testimonials Section
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -184,7 +183,7 @@ export default function PersonalTrainerPage() {
             </Card>
           </div>
         </div>
-      </section> 
+      </section> */}
 
       {/* Call to Action Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
