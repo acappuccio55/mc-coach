@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Dumbbell, Apple, Smartphone, Star, Phone, Mail, Instagram } from "lucide-react"
+import { Dumbbell, Apple, Smartphone, Star, Phone, Mail, Instagram, Users } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function PersonalTrainerPage() {
+
+const anioActual = new Date().getFullYear();
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -24,15 +27,15 @@ export default function PersonalTrainerPage() {
             Personal Trainer Certificado
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Transforma Tu
+            Transformá Tu
             <span className="block text-emerald-400">Cuerpo y Mente</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            Alcanza tus objetivos fitness con entrenamientos personalizados y un seguimiento profesional
+            Alcanzá tus objetivos fitness con entrenamientos personalizados y un seguimiento profesional
           </p>
           <Link href="/entrenamiento">
             <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 text-lg">
-              Comienza Tu Transformación
+              Comenzá Tu Transformación
             </Button>
           </Link>
         </div>
@@ -106,7 +109,7 @@ export default function PersonalTrainerPage() {
         </div>
       </section>
 
-      {/* Testimonials Section
+       {/* Testimonials Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -124,8 +127,8 @@ export default function PersonalTrainerPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-6 italic leading-relaxed">
-                  "En 6 meses logré perder 15 kilos y ganar una confianza que no tenía hace años. Los entrenamientos son
-                  desafiantes pero siempre adaptados a mi nivel."
+                  En 6 meses logré perder 15 kilos y ganar una confianza que no tenía hace años. Los entrenamientos son
+                  desafiantes pero siempre adaptados a mi nivel.
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
@@ -146,7 +149,9 @@ export default function PersonalTrainerPage() {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-6 italic leading-relaxed">"El seguimiento online es increíble. Siempre está disponible para resolver dudas y ajustar el plan. Mi rendimiento mejoró un 200%."</p>
+                <p className="text-gray-600 mb-6 italic leading-relaxed">
+                  El seguimiento online es increíble. Siempre está disponible para resolver dudas y ajustar el plan. Mi rendimiento mejoró un 200%.
+                  </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
                     <span className="text-gray-600 font-semibold">CL</span>
@@ -167,8 +172,8 @@ export default function PersonalTrainerPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-6 italic leading-relaxed">
-                  "No solo cambió mi físico, cambió mi mentalidad. Ahora tengo hábitos saludables que se mantienen en el
-                  tiempo. ¡Totalmente recomendado!"
+                  No solo cambió mi físico, cambió mi mentalidad. Ahora tengo hábitos saludables que se mantienen en el
+                  tiempo. ¡Totalmente recomendado!
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
@@ -183,12 +188,62 @@ export default function PersonalTrainerPage() {
             </Card>
           </div>
         </div>
-      </section> */}
+      </section>
+
+      {/* Seccion Sobre Mi */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Imagen a la izquierda */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-emerald-100 rounded-2xl -z-10 transform rotate-3 hidden md:block"></div>
+              <Image
+                src="/martin5.jpg" 
+                alt="Martin Coppola - Personal Trainer"
+                width={600}
+                height={700}
+                className="rounded-xl shadow-2xl object-cover"
+              />
+            </div>
+
+            {/* Texto a la derecha */}
+            <div className="space-y-6">
+              <Badge className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-none px-4 py-1">
+                Sobre Mí
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                Hola, soy <span className="text-emerald-600">Martín Coppola</span>
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Con años de experiencia en el mundo del fitness, mi misión es ayudarte a encontrar la mejor versión de vos mismo. No solo se trata de levantar pesas, sino de construir hábitos que transformen tu vida para siempre.
+              </p>
+              <p className="text-lg text-gray-500 italic">
+                Mi enfoque combina la ciencia del entrenamiento con la motivación necesaria para que nunca te rindas.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center">
+                    <Star className="w-5 h-5 text-emerald-600" />
+                  </div>
+                  <span className="font-semibold text-gray-700">Certificado Oficial</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center">
+                    <Users className="w-5 h-5 text-emerald-600" />
+                  </div>
+                  <span className="font-semibold text-gray-700">+100 Clientes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">¿Listo Para Comenzar?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">¿Listo/a Para Empezar?</h2>
           
 
           <div className="max-w-md mx-auto mb-8">
@@ -201,7 +256,7 @@ export default function PersonalTrainerPage() {
                 size="lg"
                 className="w-full bg-white hover:bg-gray-100 text-emerald-700 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Contactate Conmigo
+                Contactame
               </Button>
             </a>
           </div>
@@ -233,7 +288,7 @@ export default function PersonalTrainerPage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400">© 2025 Personal Trainer. Todos los derechos reservados.</p>
+          <p className="text-gray-400">© {anioActual} Personal Trainer. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>
