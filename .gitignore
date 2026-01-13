@@ -1,2 +1,14 @@
-node_modules
-.next
+# Dependencias
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Variables de entorno (muy importante no subirlas)
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
