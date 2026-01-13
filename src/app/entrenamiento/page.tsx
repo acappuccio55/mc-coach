@@ -281,7 +281,7 @@ export default function EntrenamientoPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="/15.jpg"
+                src="/carousel/15.jpg"
                 alt="Beneficios del entrenamiento personalizado"
                 width={600}
                 height={500}

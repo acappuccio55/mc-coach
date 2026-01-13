@@ -47,7 +47,7 @@ export function MetodologiaSeccion() {
             ))}
           </div>
           <div className="relative">
-            <Image src="/7.jpg" alt="Metodologia" width={500} height={600} className="rounded-lg shadow-xl" />
+            <Image src="/carousel/7.jpg" alt="Metodologia" width={500} height={600} className="rounded-lg shadow-xl" />
           </div>
         </div>
       </div>
