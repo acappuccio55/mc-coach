@@ -3,21 +3,21 @@ import { TestimonialCard } from "./testimonial-card"
 const testimonials = [
   {
     name: "María Rodríguez",
-    role: "Ejecutiva, 34 años",
+    role: "34 años",
     testimonial:
       "En 6 meses logré perder 15 kilos y ganar una confianza que no tenía hace años. Los entrenamientos son desafiantes pero siempre adaptados a mi nivel.",
     initials: "MR",
   },
   {
     name: "Carlos López",
-    role: "Ingeniero, 28 años",
+    role: "54 años",
     testimonial:
-      "El seguimiento online es increíble. Siempre está disponible para resolver dudas y ajustar el plan. Mi rendimiento mejoró un 200%.",
+      "El seguimiento online es increíble. Siempre está disponible para resolver dudas y ajustar el plan. Mi rendimiento mejoró un muchísimo.",
     initials: "CL",
   },
   {
     name: "Ana Silva",
-    role: "Doctora, 41 años",
+    role: "41 años",
     testimonial:
       "No solo cambió mi físico, cambió mi mentalidad. Ahora tengo hábitos saludables que se mantienen en el tiempo. ¡Totalmente recomendado!",
     initials: "AS",

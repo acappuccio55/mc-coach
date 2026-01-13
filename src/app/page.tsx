@@ -41,6 +41,56 @@ const anioActual = new Date().getFullYear();
         </div>
       </section>
 
+      {/* Seccion Sobre Mi */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Imagen a la izquierda */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-emerald-100 rounded-2xl -z-10 transform rotate-3 hidden md:block"></div>
+              <Image
+                src="/martin5.jpg" 
+                alt="Martin Coppola - Personal Trainer"
+                width={600}
+                height={700}
+                className="rounded-xl shadow-2xl object-cover"
+              />
+            </div>
+
+            {/* Texto a la derecha */}
+            <div className="space-y-6">
+              <Badge className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-none px-4 py-1">
+                Sobre Mí
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                Hola, soy <span className="text-emerald-600">Martín Coppola</span>
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Con años de experiencia en el mundo del fitness, mi misión es ayudarte a encontrar la mejor versión de vos mismo. No solo se trata de levantar pesas, sino de construir hábitos que transformen tu vida para siempre.
+              </p>
+              <p className="text-lg text-gray-500 italic">
+                Mi enfoque combina la ciencia del entrenamiento con la motivación necesaria para que nunca te rindas.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center">
+                    <Star className="w-5 h-5 text-emerald-600" />
+                  </div>
+                  <span className="font-semibold text-gray-700">Certificado Oficial</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center">
+                    <Users className="w-5 h-5 text-emerald-600" />
+                  </div>
+                  <span className="font-semibold text-gray-700">+100 Clientes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -190,56 +240,6 @@ const anioActual = new Date().getFullYear();
         </div>
       </section>
 
-      {/* Seccion Sobre Mi */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Imagen a la izquierda */}
-            <div className="relative">
-              <div className="absolute -inset-4 bg-emerald-100 rounded-2xl -z-10 transform rotate-3 hidden md:block"></div>
-              <Image
-                src="/martin5.jpg" 
-                alt="Martin Coppola - Personal Trainer"
-                width={600}
-                height={700}
-                className="rounded-xl shadow-2xl object-cover"
-              />
-            </div>
-
-            {/* Texto a la derecha */}
-            <div className="space-y-6">
-              <Badge className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-none px-4 py-1">
-                Sobre Mí
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                Hola, soy <span className="text-emerald-600">Martín Coppola</span>
-              </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                Con años de experiencia en el mundo del fitness, mi misión es ayudarte a encontrar la mejor versión de vos mismo. No solo se trata de levantar pesas, sino de construir hábitos que transformen tu vida para siempre.
-              </p>
-              <p className="text-lg text-gray-500 italic">
-                Mi enfoque combina la ciencia del entrenamiento con la motivación necesaria para que nunca te rindas.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center">
-                    <Star className="w-5 h-5 text-emerald-600" />
-                  </div>
-                  <span className="font-semibold text-gray-700">Certificado Oficial</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center">
-                    <Users className="w-5 h-5 text-emerald-600" />
-                  </div>
-                  <span className="font-semibold text-gray-700">+100 Clientes</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Call to Action Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
         <div className="max-w-4xl mx-auto text-center">
@@ -288,7 +288,7 @@ const anioActual = new Date().getFullYear();
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400">© {anioActual} Personal Trainer. Todos los derechos reservados.</p>
+          <p className="text-gray-400">© {anioActual} Personal Trainer. Todos los derechos reservados. 🍋</p>
         </div>
       </footer>
     </div>
